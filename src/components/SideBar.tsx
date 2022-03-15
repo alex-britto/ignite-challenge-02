@@ -1,13 +1,9 @@
-import { useEffect, useState } from "react";
+import { GenreResponseProps } from "../App";
 
 import { Button } from "./Button";
 
 interface SideBarProps {
-  genres: {
-    id: number;
-    name: "action" | "comedy" | "documentary" | "drama" | "horror" | "family";
-    title: string;
-  }[];
+  genres: GenreResponseProps[];
   handleClickButton: (e: number) => void;
   selectedGenreId: number;
 }
